@@ -10,7 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # Repo rules
 
-Public Next.js stub for a ZenLens page. Read [README.md](README.md) and [docs/STATUS.md](docs/STATUS.md). Profile: `ts` (Next.js, so `next lint` style via `eslint`).
+Public Next.js stub for a ZenLens page. Read [README.md](README.md) and [docs/STATUS.md](docs/STATUS.md). Profile: `ts` (Next.js; lint is `eslint` with `eslint-config-next`).
 
 ## Stack and commands
 Next.js 16 (App Router, `src/app`), React 19, Tailwind 4, TypeScript strict, ESLint 9, npm with a lockfile.

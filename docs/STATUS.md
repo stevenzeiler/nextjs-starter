@@ -4,6 +4,7 @@ Last checked 2026-11-20 against `main` at `ad57797` (2 commits, 2026-11-16).
 
 ## Works (verified 2026-11-20)
 - `npm ci` (361 packages) and `npm run build` on Node 22: succeeds, `/` and `/_not-found` prerender as static.
+- `npm run lint` is clean (run 2026-11-20).
 
 ## Broken or odd
 - `npm ci` warns that `eslint@9.39.5` is deprecated.
@@ -12,7 +13,6 @@ Last checked 2026-11-20 against `main` at `ad57797` (2 commits, 2026-11-16).
 
 ## Unknown
 - What the page was meant to become, and whether it is deployed anywhere. No deployment config is in the repo.
-- Nothing else; `npm run lint` is clean (run 2026-11-20).
 
 ## Waiting on Steven
 - License: the repo is public with no LICENSE. Choose one or leave all rights reserved.
