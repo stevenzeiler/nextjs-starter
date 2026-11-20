@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center"><img src="docs/readme/banner.svg" alt="nextjs-starter: one blank page, one centred logo" width="100%"></p>
 
-## Getting Started
+<p align="center">
+  <img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-black">
+  <img alt="React 19" src="https://img.shields.io/badge/React-19-61dafb">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-strict-3178c6">
+  <img alt="Status: stub" src="https://img.shields.io/badge/status-stub-lightgrey">
+</p>
 
-First, run the development server:
+> [!NOTE]
+> **Status: stub (2026-11-16).** A fresh `create-next-app` project with one change: the home page shows the ZenLens logo, centred, on white. There is no app behind it, no tests and no deployment config. See [docs/STATUS.md](docs/STATUS.md).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## What it is
+
+A starting point for a ZenLens web page. The home page (`src/app/page.tsx`) renders `public/zenlens-logo.png` in the middle of the screen and nothing else. It is probably a placeholder for a landing page **(inference)**.
+
+## Run it
+
+Next 16 needs Node 20.9 or newer (its `engines` field); the checks here ran on Node 22.
+
+```sh
+npm ci
+npm run dev      # http://localhost:3000
+npm run build    # verified 2026-11-20: builds, / is prerendered static
+npm run lint     # clean on 2026-11-20
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Layout
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/app/page.tsx       the centred logo
+src/app/layout.tsx     root layout and fonts
+src/app/globals.css    Tailwind 4 import
+public/zenlens-logo.png  the logo
+public/*.svg           leftover create-next-app icons, unused
+AGENTS.md              rules for agents (starts with Next.js's own block)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## History
 
-## Learn More
+- 2026-11-16 15:02: `create-next-app` scaffold.
+- 2026-11-16 15:04: blank page with the centred ZenLens logo. Two commits, no changes since.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+More: [docs/STATUS.md](docs/STATUS.md), [AGENTS.md](AGENTS.md), [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md). This repo is public and has no license file, so by default all rights are reserved.
